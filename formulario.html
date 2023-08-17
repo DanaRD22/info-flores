@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Irenka Ferrusco Santillán">
+    <link rel="icon" href="./img/marco.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Formulario</title>
+
+</head>
+
+
+    
+    
+    <header class="navegacion">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark  fixed-top text-uppercase pt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/marco.png" alt="Reino floral">
+                </a>
+                <h1>Reino floral</h1>
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <section class="buttons">
+                        <a href="pags/mapa.html" class=" tres bi bi-geo-fill" data-bs-toggle="tooltip"
+                        title="Donde esncontrarlas"></a>
+                        
+                        <a href="compras.html" class=" bi bi-bag-heart-fill" data-bs-toggle="tooltip"
+                        title="Tienda"></a>
+                        <a href="login.html" class=" bi bi-person-fill" data-bs-toggle="tooltip" title="Login"></a>
+                    </section>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<body>
+
+<div class="container-fluid">
+<form method='POST' action='/php/enviar.php'>
+<div class="form-group">
+<label for="nombre">Nombre</label>
+<input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
+</div>
+<br>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" class="form-control" name='email' id="email" placeholder="email...">
+</div>
+<br>
+
+
+<label for="start">Fecha de nacimiento:</label>
+<br>
+<input type="date" id="start" name="trip"
+       value="2018-07-22"
+       min="1600-01-01" max="2018-12-31">
+
+
+<br><br>
+<select name="menu2">
+  <option>Masculino</option>
+  <option>Femenino</option>
+</select>
+
+<br><br>
+<div class="form-group">
+<label for="exampleTextarea">Mensaje</label>
+<textarea class="form-control" name='mensaje' id="mensaje" rows="3"></textarea>
+</div>
+<input type="checkbox" required> Acepto la política de privacidad.
+</div>
+<button class="btn btn-primary" type="submit">Enviar</button>
+</form>
+<br><br><br>
+
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+</html>
